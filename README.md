@@ -1,4 +1,4 @@
-# Ruby Wrapper for Local Call Guide
+# Ruby Wrapper for Local Calling Guide
 
 This gem is a Ruby Wrapper for [Local Calling Guide](http://www.localcallingguide.com), a website for retrieving information on local calling, area codes and telephone prefixes for North America and other countries.
 
