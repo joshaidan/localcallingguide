@@ -1,4 +1,6 @@
 # Ruby Wrapper for Local Calling Guide
+[![Build Status](https://travis-ci.org/joshaidan/localcallingguide.svg?branch=master)](https://travis-ci.org/joshaidan/localcallingguide)
+[![Gem Version](https://badge.fury.io/rb/localcallingguide.svg)](https://badge.fury.io/rb/localcallingguide)
 
 This gem is a Ruby Wrapper for [Local Calling Guide](http://www.localcallingguide.com), a website for retrieving information on local calling, area codes and telephone prefixes for North America and other countries.
 
