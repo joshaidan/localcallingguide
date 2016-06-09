@@ -3,10 +3,9 @@ require 'open-uri'
 require 'xmlsimple'
 
 module LocalCallingGuide
-
   def self.get_results(url)
     data = open(url).read
-    XmlSimple.xml_in(data, { 'ForceArray' => false })
+    XmlSimple.xml_in(data, 'ForceArray' => false)
   end
 
   class LocalExchange
@@ -43,5 +42,4 @@ module LocalCallingGuide
       dist_data['rcdist']
     end
   end
-
 end
