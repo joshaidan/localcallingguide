@@ -3,10 +3,13 @@ require 'open-uri'
 require 'xmlsimple'
 
 module LocalCallingGuide
-  def self.get_results(url)
+
+  def get_results(url)
     data = open(url).read
     XmlSimple.xml_in(data, 'ForceArray' => false)
   end
+
+  module_function :get_results
 
   class LocalExchange
     def self.prefixes(exch, dir=1, rconly=0)
