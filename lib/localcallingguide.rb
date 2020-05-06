@@ -4,7 +4,7 @@ require 'xmlsimple'
 
 module LocalCallingGuide
   def get_results(url)
-    data = open(url).read
+    data = URI.open(url).read
     XmlSimple.xml_in(data, 'ForceArray' => false, 'KeyToSymbol' => false)
     # It would be nice to use KeyToSymbol but I have to figure out how to
     # handle hyphened keys, i.e. "company-name"
